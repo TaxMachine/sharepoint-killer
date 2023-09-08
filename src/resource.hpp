@@ -1,0 +1,10 @@
+//
+// Created by TaxMachine on 2023-09-07.
+//
+
+#ifndef SHAREPOINT_KILLER_RESOURCE_HPP
+#define SHAREPOINT_KILLER_RESOURCE_HPP
+
+#define IDI_ICON1 101
+
+#endif //SHAREPOINT_KILLER_RESOURCE_HPP
