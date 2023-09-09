@@ -22,7 +22,7 @@
  *
  */
 std::vector<std::string> PROCESS_BLACKLIST = {
-        "SharePoint.exe",
+        "Microsoft.SharePoint.exe",
         "OfficeClickToRun.exe"
 };
 

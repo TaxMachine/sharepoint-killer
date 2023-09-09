@@ -38,7 +38,6 @@ void checkProcesses(DWORD processId) {
 void CheckProcessLoop() {
     DWORD processId = GetCurrentProcessId();
     while (true) {
-
         checkProcesses(processId);
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
@@ -58,7 +57,7 @@ bool IsAdmin() {
 }
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-    //ShowWindow(GetConsoleWindow(), SW_HIDE);
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
     if (!IsAdmin()) {
         MessageBox(nullptr, TEXT("You need to run this program as administrator!"), TEXT("SharePoint Killer"), MB_OK | MB_ICONERROR);
         return 0;
